@@ -1,0 +1,69 @@
+input{
+    padding: 20px 15px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    &::placeholder{
+        font-size: 15px;
+        // @include Roboto-medium;
+        color: rgb(205, 172, 236);
+    }
+    &:hover{
+        box-shadow: 0px 0px 10px 0px rgba(224, 11, 11, 0.08);
+    }
+   
+}
+input[type=checkbox]{
+    margin-bottom: 0 !important;
+}
+
+textarea{
+    padding: 15px 15px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    &::placeholder{
+        font-size: 15px;
+        // @include Roboto-medium;
+        color: rgb(205, 172, 236);
+    }
+    &:hover{
+        box-shadow: 0px 0px 10px 0px rgba(224, 11, 11, 0.08);
+    }
+ 
+}
+.contact-details h1{
+    font-size: 24px;
+    @include CenturyGothic-bold;
+    text-transform: uppercase;
+    color: #282932;
+    @include max-breakpoints(mobile){
+        font-size: 20px;
+    }
+}
+.contact-details p{
+    font-size: 24px;
+    // @include Roboto-regular;
+    color: #282932;
+    @include max-breakpoints(mobile){
+        font-size: 20px;
+    }
+}
+select{
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff !important;
+    color: #c1c1c1;
+    @include CenturyGothic-regular;
+    font-size: 14px;
+    color: #c1c1c1;
+   
+}

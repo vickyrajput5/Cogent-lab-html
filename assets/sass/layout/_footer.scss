@@ -1,0 +1,104 @@
+footer {
+  @include spacing-section-66();
+  background-color: #22222208;
+  .container {
+    .footer-section {
+      .footer-menu {
+        @include max-breakpoints(tablet-small){
+          flex-direction: column;
+        }
+        .menu-left {
+          img {
+            filter: brightness(0) saturate(100%) invert(27%) sepia(92%)
+              saturate(2514%) hue-rotate(246deg) brightness(99%) contrast(107%);
+          }
+        }
+        .menu-right {
+          @include max-breakpoints(tablet-small){
+            flex-direction: column;
+          }
+          .menu-ul {
+            @include max-breakpoints(tablet-small){
+              padding-top: 30px;
+              padding-bottom: 20px;
+              padding-left: 0px;
+            }
+            .menu-li {
+              padding-right: 40px;
+              @include max-breakpoints(tablet-small) {
+                padding-right: 15px;
+              }
+              a {
+                @include Montserrat-semibold();
+                font-size: 16px !important;
+                color: $headColor;
+                text-transform: uppercase;
+                text-decoration: none;
+                @include max-breakpoints(tablet){
+                    font-size: 12px !important;
+                  }
+              }
+            }
+          }
+          .left-btn{
+            .btn{
+                @include btn();
+                &:first-child{
+                  margin-right: 20px;
+                }
+                @include max-breakpoints(tablet){
+                    font-size: 12px;
+                  }
+              }
+          }
+        }
+      }
+      .footer-social{
+        padding-top: 30px;
+        @include max-breakpoints(tablet-small){
+          flex-direction: column;
+        }
+        .social-left{
+          @include max-breakpoints(tablet-small){
+            order: 2;
+          }
+            p{
+                max-width: 400px;
+                width: 100%;
+                @include Raleway-regular();
+                font-size: 12px;
+                color: $headColor;
+                @include max-breakpoints(tablet-small){
+                  text-align: center;
+                  margin: auto;
+                  max-width: 100%;
+                }
+            }
+        }
+        .social-right{
+           
+            .social-ul{
+              @include max-breakpoints(tablet-small){
+                justify-content: center;
+                padding-left: 0px;
+              }
+                .social-li{
+                    padding-left: 30px;
+                    @include max-breakpoints(tablet-small) {
+                     padding: 0px 7px;
+                    }
+                    a{ 
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            filter: brightness(0) saturate(100%) invert(27%) sepia(92%)
+                            saturate(2514%) hue-rotate(246deg) brightness(99%)
+                            contrast(107%);
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+// google font
+//
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../../fonts/CenturyGothic-bold.TTF");
+}
+@mixin old-standard-bold {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin old-standard-regular {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin CenturyGothic-bold {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin CenturyGothic-regular {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin Montserrat-extraBold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+@mixin Montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin Montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin Montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin Raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin Raleway-medium {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+@mixin Raleway-semiblod {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin Raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+//  applying font
+
+// // Heading style
+// @mixin btn-text {
+//   @include Poppins-semibold();
+//   font-size: 20px;
+// }
+// @mixin heading {
+//   @include old-standard-bold();
+//   font-size: 50px;
+// }
+
+@mixin main-heading {
+  @include Montserrat-bold();
+  font-size: 56px;
+  color: #000000;
+  @include max-breakpoints(tablet){
+    font-size: 45px;
+  }
+  @include max-breakpoints(tablet-small){
+    font-size: 36px;
+  }
+}
+
+@mixin sub-heading {
+  @include Montserrat-bold();
+  font-size: 34px;
+  color: $headColor;
+  @include max-breakpoints(tablet){
+    font-size: 28px;
+  }
+}
+
+@mixin card-heading {
+  @include Montserrat-extraBold();
+  font-size: 24px;
+  color: $headColor;
+  @include max-breakpoints(tablet){
+    font-size: 20px;
+  }
+}
+

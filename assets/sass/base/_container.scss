@@ -1,0 +1,26 @@
+@mixin max-width($mw, $custom-mw: false) {
+  @if $mw == containerr {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include max-breakpoints(tablet-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @if $mw == custom-mw-auto {
+    width: 100%;
+    max-width: $custom-mw;
+    margin: 0 auto;
+  }
+  @if $mw == custom-mw {
+    width: 100%;
+    max-width: $custom-mw;
+  }
+}
+
+.container {
+  @include max-width(container);
+}
